@@ -2,7 +2,7 @@
 
 # 🔐 Vaulted
 
-### by Ilmnos Lab ・ One portable Obsidian vault committed alongside every code project — shared second brain for you and every AI coding agent. Claude Code / Cursor / Windsurf / GitHub Copilot Agent / Devin ready.
+### by Ilmnos Lab ・ One portable Obsidian vault committed alongside every code project — shared second brain for you and every AI coding agent. Claude Code / Cursor / Windsurf / VS Code-GitHub Copilot Agent / Devin ready.
 
 </div>
 
