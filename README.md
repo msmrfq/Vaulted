@@ -264,7 +264,6 @@ All documentation lives INSIDE the vault (second-brain-native):
 | Link | Contents |
 |---|---|
 | [.obsidian-vault/OPERATIONAL_GUIDE.md](.obsidian-vault/OPERATIONAL_GUIDE.md) | Full human step-by-step operational manual for every scenario: Day 0 / Daily / Milestone / Retro / Project End. Includes the full 9-row Troubleshooting table + how to rescue mirror edits. |
-| [HermesZum — upstream guideline repo ↗](https://github.com/HermesZum/Obsidian-VS-Code-Copilot-AI-Second-Brain-Per-Project-Setup) | The authoritative written guideline this template implements 100%. Contains the exact design rationale, plugin settings, and canonical folder layout this project is built on. |
 | [.obsidian-vault/daily/_PROMPT-session-end-generate-daily-note.md](.obsidian-vault/daily/_PROMPT-session-end-generate-daily-note.md) | Saved reusable Session End prompt. Generates today's daily log (5 sections) from git history + chat context. Copy the one-liner invocation from inside the file. |
 | [.obsidian-vault/daily/_PROMPT-triage-daily-note-migrate.md](.obsidian-vault/daily/_PROMPT-triage-daily-note-migrate.md) | Saved reusable Session Triage prompt. Migrations: updates CLAUDE.md Current State, drafts bugs/ADRs/specs/retros, adds bidirectional breadcrumbs, produces 🟡/🟢 human-review report table. |
 
