@@ -1,7 +1,5 @@
 <div align="center">
 
-<img alt="Vaulted by Ilmnos Lab — Obsidian + VS Code AI Second Brain for every project" src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=minimalist%20clean%20tech%20hero%20banner%20dark%20slate%20background%2C%20single%20closed%20vault%20diamond%20emblem%20with%20code%20brackets%20wrapped%20around%20it%2C%20word%20VAULTED%20in%20geometric%20sans%2C%20Ilmnos%20Lab%20small%20wordmark%20in%20corner%2C%20violet%20teal%20accent%2C%20high%20contrast&image_size=landscape_16_9" width="100%" style="border-radius:14px;max-height:240px;object-fit:cover"/>
-
 # 🔐 Vaulted
 
 ### by Ilmnos Lab ・ One portable Obsidian vault committed alongside every code project — shared second brain for you and every AI coding agent. Claude Code / Cursor / Windsurf / GitHub Copilot Agent / Devin ready.
