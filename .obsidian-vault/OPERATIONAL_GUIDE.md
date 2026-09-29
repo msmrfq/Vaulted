@@ -37,9 +37,9 @@ And 3 top-level files inside the vault:
 
 | File | Purpose |
 |---|---|
-| [00-inbox.md](file:///c:/Users/Masum%20Rafique/Desktop/Obsidian%20Project/.obsidian-vault/00-inbox.md) | Capture zone — write anything here when you don't know where else. Triage prompt will pick it up eventually. |
-| [Dashboard.md](file:///c:/Users/Masum%20Rafique/Desktop/Obsidian%20Project/.obsidian-vault/Dashboard.md) | Obsidian home screen — Dataview queries for open bugs / open specs / recent decisions. Read this every morning. Don't hand-edit the Dataview blocks. |
-| **[CLAUDE.md](file:///c:/Users/Masum%20Rafique/Desktop/Obsidian%20Project/.obsidian-vault/CLAUDE.md)** | ⭐ **AI Briefing — The Most Important File in the Whole Project.** When a new AI agent starts, it reads this. Contains: What this is / Tech stack / Current state / Key decisions / File map / Do Not. If it's wrong, every AI answer is wrong. |
+| [00-inbox.md](00-inbox.md) | Capture zone — write anything here when you don't know where else. Triage prompt will pick it up eventually. |
+| [Dashboard.md](Dashboard.md) | Obsidian home screen — Dataview queries for open bugs / open specs / recent decisions. Read this every morning. Don't hand-edit the Dataview blocks. |
+| **[CLAUDE.md](CLAUDE.md)** | ⭐ **AI Briefing — The Most Important File in the Whole Project.** When a new AI agent starts, it reads this. Contains: What this is / Tech stack / Current state / Key decisions / File map / Do Not. If it's wrong, every AI answer is wrong. |
 
 ---
 
@@ -82,7 +82,7 @@ Inside Obsidian:
 
 ### Step 1.4 — Fill in the canonical CLAUDE.md
 
-Open **[.obsidian-vault/CLAUDE.md](file:///c:/Users/Masum%20Rafique/Desktop/Obsidian%20Project/.obsidian-vault/CLAUDE.md)** in Obsidian or VS Code. Fill these fields once:
+Open **[.obsidian-vault/CLAUDE.md](CLAUDE.md)** in Obsidian or VS Code. Fill these fields once:
 
 1. **`# [YOUR PROJECT NAME]`** → Replace with real project name.
 2. **`## What this is`** → Write 1–2 sentences that would brief a new senior dev on this project. Delete the InvoiceFlow example text once you write yours.
@@ -161,7 +161,7 @@ Rules while coding:
   - The Session End prompt's "Investigations & dead ends" section is the **single most valuable part of the whole second brain.** Future-you 3 weeks from now will re-investigate the exact same dead-end and waste 90 minutes unless today-you writes it down.
 - If you make a real architectural decision, keep going — Triage will draft the ADR at session end.
 - If you find a real reproducible bug, keep going — Triage will draft the bug report at session end.
-- Random capture-before-you-forget stuff goes into [.obsidian-vault/00-inbox.md](file:///c:/Users/Masum%20Rafique/Desktop/Obsidian%20Project/.obsidian-vault/00-inbox.md). Don't overthink placement.
+- Random capture-before-you-forget stuff goes into [.obsidian-vault/00-inbox.md](00-inbox.md). Don't overthink placement.
 
 ### Step 2.2 — End of coding session. [1] Run Session End prompt. (~2 min)
 
@@ -181,7 +181,7 @@ When you're done for the day:
    ```
 
 3. Wait ~30–60 seconds. Copilot reads git status, git diff, today's commits, the chat history, and creates:
-   - [.obsidian-vault/daily/YYYY-MM-DD.md](file:///c:/Users/Masum%20Rafique/Desktop/Obsidian%20Project/.obsidian-vault/daily/) with 5 sections (see the Session End prompt for the exact layout), plus
+   - [.obsidian-vault/daily/YYYY-MM-DD.md](daily/) with 5 sections (see the Session End prompt for the exact layout), plus
    - A confidence breakdown table in chat, a list of what it CANNOT know (you add this next), and suggested migrations.
 
 ### Step 2.3 — [2] The 3-minute human edit. (HARD LIMIT 3 minutes.)
@@ -305,7 +305,7 @@ SAVE the retro note.
 
 The Triage prompt is deliberately *forbidden* from auto-editing permanent sections of `.obsidian-vault/CLAUDE.md`. It will always flag candidates in the report table and let you decide. YOU are the gatekeeper.
 
-Open [.obsidian-vault/CLAUDE.md](file:///c:/Users/Masum%20Rafique/Desktop/Obsidian%20Project/.obsidian-vault/CLAUDE.md) and perform ANY of these that EARNED their place:
+Open [.obsidian-vault/CLAUDE.md](CLAUDE.md) and perform ANY of these that EARNED their place:
 
 | If your retro produced… | Write it into this `.obsidian-vault/CLAUDE.md` section | Format / Rules |
 |---|---|---|
@@ -328,9 +328,9 @@ SAVE `.obsidian-vault/CLAUDE.md` when done.
 
 For each non-Do-Not, non-Current-State action item in the retro note:
 
-1. If it's a new bug → Copy the bug content. Create file `.obsidian-vault/bugs/descriptive-slug.md` by copying [templates/_template-bug.md](file:///c:/Users/Masum%20Rafique/Desktop/Obsidian%20Project/.obsidian-vault/templates/_template-bug.md) as your starting point. Fill out frontmatter title / date / status = Open. Add a link on line 1 back to the retro note: `🔎 Root note: retro/NNN-your-milestone-slug.md`.
-2. If it's a new architecture decision → Create `.obsidian-vault/decisions/NNN-short-slug.md` using [templates/_template-adr.md](file:///c:/Users/Masum%20Rafique/Desktop/Obsidian%20Project/.obsidian-vault/templates/_template-adr.md). `NNN` = next number above the highest-numbered existing ADR.
-3. If it's a new feature to spec → Create `.obsidian-vault/specs/feature-name.md` using [templates/_template-spec.md](file:///c:/Users/Masum%20Rafique/Desktop/Obsidian%20Project/.obsidian-vault/templates/_template-spec.md).
+1. If it's a new bug → Copy the bug content. Create file `.obsidian-vault/bugs/descriptive-slug.md` by copying [templates/_template-bug.md](templates/_template-bug.md) as your starting point. Fill out frontmatter title / date / status = Open. Add a link on line 1 back to the retro note: `🔎 Root note: retro/NNN-your-milestone-slug.md`.
+2. If it's a new architecture decision → Create `.obsidian-vault/decisions/NNN-short-slug.md` using [templates/_template-adr.md](templates/_template-adr.md). `NNN` = next number above the highest-numbered existing ADR.
+3. If it's a new feature to spec → Create `.obsidian-vault/specs/feature-name.md` using [templates/_template-spec.md](templates/_template-spec.md).
 
 Alternatively, you can run the Triage prompt one more time pointed at the retro note (not a daily note) — it will NOT auto-write permanent sections, but it WILL auto-draft the ADR / bug / spec files for you and save the copy-paste, then you review 🟡 flags and delete the bad ones. This is a convenience, not mandatory. Rule 🔒 1 and 🔒 2 still apply.
 
